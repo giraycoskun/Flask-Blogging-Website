@@ -5,5 +5,12 @@
         "--load-plugins",
         "pylint_flask_sqlalchemy",
         "pylint_flask",                 
+    ],
+    "conventionalCommits.scopes": [
+        "vscode",
+        "docker",
+        "config",
+        "assets",
+        "flask-app"
     ]
 }
