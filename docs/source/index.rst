@@ -10,10 +10,12 @@ Welcome to Flask Blogging Website's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   README.md
+
    modules
 
-.. include:: ../../README.md
-   :parser: myst_parser.sphinx_
+.. include:: README.md
+     :parser: myst_parser.sphinx_
 
 Indices and tables
 ==================
