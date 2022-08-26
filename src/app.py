@@ -43,7 +43,7 @@ def initialize_app(app):
 
 
 def page_not_found(error):
-    return render_template('./templates/errors/not-found.html', title = '404'), 404
+    return render_template('/errors/404.html', title = '404'), 404
 
 if __name__ == "__main__":
     app = create_app()
