@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
 
-  web:
+  app:
     build: .
     env_file: 
       - docker.env
@@ -27,3 +27,8 @@ services:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 10s
       retries: 5
+
+  nginx:
+    image: nginx:latest
+    depends_on:
+      - app
