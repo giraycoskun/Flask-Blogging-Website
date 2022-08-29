@@ -117,6 +117,81 @@ up to you to implement it.</p>
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="routes.admin.PostModelView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">routes.admin.</span></span><span class="sig-name descname"><span class="pre">PostModelView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">static_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_icon_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_icon_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelView</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.action_view">
+<span class="sig-name descname"><span class="pre">action_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.action_view" title="Permalink to this definition"></a></dt>
+<dd><p>Mass-model action view.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.ajax_lookup">
+<span class="sig-name descname"><span class="pre">ajax_lookup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.ajax_lookup" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.ajax_update">
+<span class="sig-name descname"><span class="pre">ajax_update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.ajax_update" title="Permalink to this definition"></a></dt>
+<dd><p>Edits a single column of a record in list view.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.create_view">
+<span class="sig-name descname"><span class="pre">create_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.create_view" title="Permalink to this definition"></a></dt>
+<dd><p>Create model view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.delete_view">
+<span class="sig-name descname"><span class="pre">delete_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.delete_view" title="Permalink to this definition"></a></dt>
+<dd><p>Delete model view. Only POST method is allowed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.details_view">
+<span class="sig-name descname"><span class="pre">details_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.details_view" title="Permalink to this definition"></a></dt>
+<dd><p>Details model view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.edit_view">
+<span class="sig-name descname"><span class="pre">edit_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.edit_view" title="Permalink to this definition"></a></dt>
+<dd><p>Edit model view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.export">
+<span class="sig-name descname"><span class="pre">export</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">export_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.export" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.inaccessible_callback">
+<span class="sig-name descname"><span class="pre">inaccessible_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.inaccessible_callback" title="Permalink to this definition"></a></dt>
+<dd><p>Handle the response to inaccessible views.</p>
+<p>By default, it throw HTTP 403 error. Override this method to
+customize the behaviour.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.index_view">
+<span class="sig-name descname"><span class="pre">index_view</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.index_view" title="Permalink to this definition"></a></dt>
+<dd><p>List view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="routes.admin.PostModelView.is_accessible">
+<span class="sig-name descname"><span class="pre">is_accessible</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.PostModelView.is_accessible" title="Permalink to this definition"></a></dt>
+<dd><p>Override this method to add permission checks.</p>
+<p>Flask-Admin does not make any assumptions about the authentication system used in your application, so it is
+up to you to implement it.</p>
+<p>By default, it will allow access for everyone.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="routes.admin.UserModelView">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">routes.admin.</span></span><span class="sig-name descname"><span class="pre">UserModelView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">static_folder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_class_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_icon_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu_icon_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#routes.admin.UserModelView" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelView</span></code></p>
@@ -243,6 +318,11 @@ up to you to implement it.</p>
 <span class="sig-prename descclassname"><span class="pre">routes.blog.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.blog.contact" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="routes.blog.post">
+<span class="sig-prename descclassname"><span class="pre">routes.blog.</span></span><span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.blog.post" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-routes">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-routes" title="Permalink to this heading"></a></h2>
@@ -254,6 +334,16 @@ up to you to implement it.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="routes.root">
 <span class="sig-prename descclassname"><span class="pre">routes.</span></span><span class="sig-name descname"><span class="pre">root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.root" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="routes.site_map">
+<span class="sig-prename descclassname"><span class="pre">routes.</span></span><span class="sig-name descname"><span class="pre">site_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.site_map" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="routes.test">
+<span class="sig-prename descclassname"><span class="pre">routes.</span></span><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#routes.test" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>

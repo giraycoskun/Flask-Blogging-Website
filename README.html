@@ -45,6 +45,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dependencies">Dependencies</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#website-templates">Website Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#services">Services</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#notes-during-development">Notes during Development</a><ul>
@@ -124,17 +125,35 @@
 <p><a class="reference external" href="https://colorlib.com/wp/template/login-form-v1/">Login Form Template</a></p>
 <p><a class="reference external" href="https://colorlib.com/wp/template/colorlib-error-404-3/">404 Template</a></p>
 </section>
+<section id="services">
+<h3>Services<a class="headerlink" href="#services" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>MySQL</p>
+<ul>
+<li><p>Official Image &#64; <a class="reference external" href="https://hub.docker.com/_/mysql">DockerHub</a></p></li>
+</ul>
+</li>
+<li><p>Nginx</p>
+<ul>
+<li><p>Official Image &#64; <a class="reference external" href="https://hub.docker.com/_/nginx">DockerHub</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 <hr class="docutils" />
 <section id="notes-during-development">
 <h2>Notes during Development<a class="headerlink" href="#notes-during-development" title="Permalink to this heading"></a></h2>
 <section id="mysql-commands">
 <h3>MySQL Commands<a class="headerlink" href="#mysql-commands" title="Permalink to this heading"></a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">--</span><span class="n">host</span><span class="o">=</span><span class="mf">127.0.0.1</span> <span class="o">-</span><span class="n">P</span> <span class="mi">3306</span> <span class="o">--</span><span class="n">user</span><span class="o">=</span><span class="n">root</span> <span class="o">--</span><span class="n">password</span><span class="o">=</span><span class="n">secret</span> <span class="n">flask</span><span class="o">-</span><span class="n">blog</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">rm</span> <span class="o">-</span><span class="n">e</span> <span class="n">MYSQL_ROOT_PASSWORD</span><span class="o">=</span><span class="n">root</span> <span class="o">-</span><span class="n">e</span> <span class="n">MYSQL_DATABASE</span><span class="o">=</span><span class="n">flask</span><span class="o">-</span><span class="n">blog</span> <span class="o">-</span><span class="n">p</span> <span class="mi">3306</span><span class="p">:</span><span class="mi">3306</span> <span class="n">mysql</span><span class="p">:</span><span class="n">latest</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">--</span><span class="n">host</span><span class="o">=</span><span class="mf">127.0.0.1</span> <span class="o">-</span><span class="n">P</span> <span class="mi">3306</span> <span class="o">--</span><span class="n">user</span><span class="o">=</span><span class="n">root</span> <span class="o">--</span><span class="n">password</span><span class="o">=</span><span class="n">root</span> <span class="n">flask</span><span class="o">-</span><span class="n">blog</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CREATE</span> <span class="n">USER</span> <span class="n">db_user</span> <span class="n">IDENTIFIED</span> <span class="n">BY</span> <span class="s1">&#39;db_password&#39;</span><span class="p">;</span>
-<span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">ON</span> <span class="s2">&quot;flask-blog.*&quot;</span> <span class="n">TO</span> <span class="n">db_user</span><span class="p">;</span>
+<span class="n">GRANT</span> <span class="n">ALL</span> <span class="n">ON</span> <span class="s1">&#39;flask-blog&#39;</span><span class="o">.*</span> <span class="n">TO</span> <span class="n">db_user</span><span class="p">;</span>
 </pre></div>
 </div>
 </section>

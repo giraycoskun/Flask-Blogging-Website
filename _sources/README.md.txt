@@ -46,6 +46,13 @@ docker pull giraycoskun/flask-blog
 
 [404 Template](https://colorlib.com/wp/template/colorlib-error-404-3/)
 
+### Services
+
+- MySQL
+  - Official Image @ [DockerHub](https://hub.docker.com/_/mysql)
+- Nginx
+  - Official Image @ [DockerHub](https://hub.docker.com/_/nginx)
+
 ---
 
 ## Notes during Development
@@ -53,12 +60,16 @@ docker pull giraycoskun/flask-blog
 ### MySQL Commands
 
 ```
-mysql --host=127.0.0.1 -P 3306 --user=root --password=secret flask-blog
+docker run --rm -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=flask-blog -p 3306:3306 mysql:latest
+```
+
+```
+mysql --host=127.0.0.1 -P 3306 --user=root --password=root flask-blog
 ```
 
 ```
 CREATE USER db_user IDENTIFIED BY 'db_password';
-GRANT ALL ON "flask-blog.*" TO db_user;
+GRANT ALL ON 'flask-blog'.* TO db_user;
 ```
 
 ---
