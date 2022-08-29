@@ -24,3 +24,10 @@ def contact():
         return render_template('contact.html')
     except TemplateNotFound:
         abort(404)
+
+@views.route('/post')
+def post():
+    try:
+        return render_template('post.html')
+    except TemplateNotFound:
+        abort(404)

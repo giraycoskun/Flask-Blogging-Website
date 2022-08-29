@@ -8,9 +8,10 @@ login_manager.login_view = 'views.auth.login'
 def admin_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
-        if current_user.role == "admin":
+        if current_user.is_admin:
             return f(*args, **kwargs)
         else:
             flash("You need to be an admin to view this page.", 'error')
             return redirect(url_for('views.index'))
     return wrap
+    
